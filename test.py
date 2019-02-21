@@ -32,11 +32,11 @@ while True:
         break
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
 
-    # define range of pink color in HSV
+    # define range of red color in HSV
     lower = np.array([0,100,100])
     upper = np.array([20,255,255])
 
-    # Threshold the HSV image to get only pink colors
+    # Threshold the HSV image to get only red colors
     mask = cv2.inRange(hsv, lower, upper)
 
     # Bitwise-AND mask and original image
