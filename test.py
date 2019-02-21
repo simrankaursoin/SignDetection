@@ -1,6 +1,5 @@
 import numpy as np
 import cv2
-import psutil
 
 cap = cv2.VideoCapture(0)
 
@@ -41,7 +40,6 @@ while True:
 
     # Bitwise-AND mask and original image
     res = cv2.bitwise_and(frame,frame, mask= mask)
-    print(psutil.virtual_memory())
     cv2.imshow('frame',frame)
     cv2.imshow('mask',mask)
     cv2.imshow('res',res)
