@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 aom
 autoconf
 autoconf-archive
@@ -99,3 +100,7 @@ x265
 xvid
 xz
 yasm
+=======
+numpy==1.16.1
+opencv-python==4.0.0.21
+>>>>>>> 287dfcd716e5333d37fc01969506884213c5ce59
