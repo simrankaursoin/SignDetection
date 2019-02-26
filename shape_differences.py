@@ -65,6 +65,9 @@ while(1):
                 cv2.putText(canny,'PENTA',(x,y),cv2.FONT_HERSHEY_SIMPLEX,scale,(255,255,255),2,cv2.LINE_AA)
             elif(vtc==6):
                 cv2.putText(canny,'HEXA',(x,y),cv2.FONT_HERSHEY_SIMPLEX,scale,(255,255,255),2,cv2.LINE_AA)
+            elif(vtc==8):
+                cv2.putText(canny,'OCTA',(x,y),cv2.FONT_HERSHEY_SIMPLEX,scale,(255,255,255),2,cv2.LINE_AA)
+
         else:
             #detect and label circle
             area = cv2.contourArea(contours[i])
